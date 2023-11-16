@@ -15,3 +15,7 @@ test('returns: Hello, my friend. given: undefined', () => {
 test('return: Hello, my friend. given: "  " ', () => {
     expect(helloWorld("  ")).toBe('Hello, my friend.')
 });
+
+test('return:  HELLO, KENOBI! given: KENOBI', () => {
+    expect(helloWorld("KENOBI")).toBe('HELLO, KENOBI!')
+  })
