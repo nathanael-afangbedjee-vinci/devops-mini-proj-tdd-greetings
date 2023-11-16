@@ -18,4 +18,8 @@ test('return: Hello, my friend. given: "  " ', () => {
 
 test('return:  HELLO, KENOBI! given: KENOBI', () => {
     expect(helloWorld("KENOBI")).toBe('HELLO, KENOBI!')
-  })
+  });
+
+test('giving Kratos, Thanathos given: Kratos and Thanathos.', () => {
+    expect(helloWorld(['Kratos', 'Thanathos'])).toBe('Hello, Kratos and Thanathos.');
+});
