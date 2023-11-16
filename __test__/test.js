@@ -23,3 +23,11 @@ test('return:  HELLO, KENOBI! given: KENOBI', () => {
 test('giving Kratos, Thanathos given: Kratos and Thanathos.', () => {
     expect(helloWorld(['Kratos', 'Thanathos'])).toBe('Hello, Kratos and Thanathos.');
 });
+
+test('return: Hello, Kratos, Thanathos and Hypnos. given: Kratos, Thanathos and Hypnos', () => {
+    expect(helloWorld(['Kratos', 'Thanathos' , 'Hypnos'])).toBe('Hello, Kratos, Thanathos and Hypnos.');
+  });
+  
+  test('return: Hello, Kratos, Thanathos, Protos and Hypnos. given: Kratos, Thanathos, Protos and Hypnos', () => {
+    expect(helloWorld(['Kratos', 'Thanathos' , 'Protos', 'Hypnos'])).toBe('Hello, Kratos, Thanathos, Protos and Hypnos.');
+  });
