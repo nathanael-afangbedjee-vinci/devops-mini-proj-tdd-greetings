@@ -1,6 +1,6 @@
 function greet(name) {
     if(name && typeof name === 'object')
-        return twoWord(name);    
+        return multipleWords(name);    
         
     if (name === null  || name === undefined || name.trim() === '') 
         return "Hello, my friend.";
@@ -11,8 +11,16 @@ function greet(name) {
     return `Hello, ${(name)}.`;
 }
 
-function twoWord(name){
-    return `Hello, ${name[0]} and ${name[1]}.`;
+function multipleWords(names){
+    let sentenceStart = 'Hello, ';
+
+    for (let i = 0; i < names.length - 1; i++) {
+            sentenceStart += `${names[i]}`;
+        if(i !== names.length - 2)
+        sentenceStart +=`, `;
+    }
+    return sentenceStart +  ` and ${names[names.length-1]}.`;
 }
+
 
 module.exports = greet;
