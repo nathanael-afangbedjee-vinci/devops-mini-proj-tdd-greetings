@@ -32,7 +32,7 @@ test('return: Hello, Kratos, Thanathos and Hypnos. given: Kratos, Thanathos and 
     expect(helloWorld(['Kratos', 'Thanathos' , 'Protos', 'Hypnos'])).toBe('Hello, Kratos, Thanathos, Protos and Hypnos.');
   });
 
-  test('return: Hello, Thanathos and Hypnos. AND HELLO KRATOS! given: Thanathos, Hypnos and KRATOS', () => {
-    expect(helloWorld(['Thanathos', 'Hypnos' , 'KRATOS'])).toBe('Hello, Thanathos and Hypnos. AND HELLO KRATOS!');
-  });
-  
+  test('return: Bonjour, Kratos et Thanathos. given: Kratos Thanathos in fr ', () => {
+
+    expect(helloWorld(['Kratos', 'Thanathos', 'fr'])).toBe('Bonjour, Kratos et Thanathos.');
+});
