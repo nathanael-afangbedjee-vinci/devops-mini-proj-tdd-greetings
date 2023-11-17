@@ -1,1 +1,5 @@
-# devops-mini-proj-tdd-greetings
+groupe 68
+
+Afangbedjee Nathanael
+Amaral Lopes Tiago André
+El Hannouti Ali
