@@ -22,4 +22,5 @@ jobs:
     - name: pipeline start
       run: echo "pipeline start date +%H:%M:%S"
 
-    -
+      - name: Format code for Prettier
+      run: npm run prettier
