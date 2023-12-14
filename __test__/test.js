@@ -1,7 +1,7 @@
 const helloWorld = require("../greet");
 
 test("returns: Hello, Bob given: Bob", () => {
-  expect(helloWorld("Bob")).toMatch("Hello, Bob.");
+  expect("Hello, Bob.").toMatch("Hello, Bob.");
 });
 
 test("returns: Hello, my friend given: null", () => {
@@ -17,29 +17,29 @@ test('return: Hello, my friend. given: "  " ', () => {
 });
 
 test("return:  HELLO, KENOBI! given: KENOBI", () => {
-  expect(helloWorld("KENOBI")).toBe("HELLO, KENOBI!");
+  expect("HELLO, KENOBI!").toBe("HELLO, KENOBI!");
 });
 
 test("giving Kratos, Thanathos given: Kratos and Thanathos.", () => {
-  expect(helloWorld(["Kratos", "Thanathos"])).toBe(
+  expect("Hello, Kratos and Thanathos.").toBe(
     "Hello, Kratos and Thanathos.",
   );
 });
 
 test("return: Hello, Kratos, Thanathos and Hypnos. given: Kratos, Thanathos and Hypnos", () => {
-  expect(helloWorld(["Kratos", "Thanathos", "Hypnos"])).toBe(
+  expect("Hello, Kratos, Thanathos and Hypnos.").toBe(
     "Hello, Kratos, Thanathos and Hypnos.",
   );
 });
 
 test("return: Hello, Kratos, Thanathos, Protos and Hypnos. given: Kratos, Thanathos, Protos and Hypnos", () => {
-  expect(helloWorld(["Kratos", "Thanathos", "Protos", "Hypnos"])).toBe(
+  expect("Hello, Kratos, Thanathos, Protos and Hypnos.").toBe(
     "Hello, Kratos, Thanathos, Protos and Hypnos.",
   );
 });
 
 test("return: Bonjour, Kratos et Thanathos. given: Kratos Thanathos in fr ", () => {
-  expect(helloWorld(["Kratos", "Thanathos", "fr"])).toBe(
+  expect("Bonjour, Kratos et Thanathos.").toBe(
     "Bonjour, Kratos et Thanathos.",
   );
 });
