@@ -28,5 +28,5 @@ jobs:
       - name: Format code for lint
         run: npm run lint:fix
 
-    - name: Test coverages
+    - name: Test coverage
       run: npm run coverage
