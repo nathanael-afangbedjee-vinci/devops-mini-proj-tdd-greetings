@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: pipeline start
-        run: echo "pipeline start date +%H:%M:%S"
+        run: echo "pipeline start `date +%H:%M:%S:%N`"
 
       - name: Format code for Prettier
         run: npm run prettier:fix
