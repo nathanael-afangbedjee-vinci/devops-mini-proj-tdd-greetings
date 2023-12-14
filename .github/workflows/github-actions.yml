@@ -18,3 +18,15 @@ jobs:
 
     - name: Dependencies Installation
       run: npm install
+
+    - name: pipeline start
+      run: echo "pipeline start date +%H:%M:%S"
+
+    - name: Format code for Prettier
+      run: npm run prettier
+
+    - name: Test Eslint
+      run: npm run lint 
+
+    - name: Test coverage
+      run: npm run coverage
