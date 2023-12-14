@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
-    "test:watch": "jest --watchAll",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "lint": "eslint .",
-    "linr:fix": "eslint --fix .",
-    "commit": "cz"
+    "start": "nodemon ./src/app.js",
+    "test": "jest --watch",
+    "prettier": "prettier ./src/** --check",
+    "prettier:fix": "prettier ./src/** --write",
+    "lint": "eslint ./src/**",
+    "lint:fix": "eslint --fix ./src/**",
+    "list": "ls -la",
+    "build": "webpack ./src/app.js -o dist/",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
