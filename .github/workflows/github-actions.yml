@@ -18,3 +18,6 @@ jobs:
 
     - name: Dependencies Installation
       run: npm install
+
+    - name: pipeline start
+      run: echo "pipeline start date +%H:%M:%S"
