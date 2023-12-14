@@ -11,7 +11,7 @@
     "lint:fix": "eslint --fix .",
     "code:fix": "prettier --write . && eslint --fix .",
     "commit": "cz",
-    "build": "webpack ./src/app.js -o dist/",
+    "build": "webpack ./src/greet.js -o dist/",
     "coverage": "jest --coverage"
   },
   "repository": {
