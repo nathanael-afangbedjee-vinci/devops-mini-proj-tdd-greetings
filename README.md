@@ -50,35 +50,42 @@ Liens utiles:
 - Décrivez brièvement ce que fait votre fichier YML.
 
 ```bash
-<votre réponse ici>
+Lorsequ'on fait un pull request le workflows se lance. Ensuite dans le fichier yml on fait un checkout du code nodeJs et on intègre l'environnement nodeJs. Par après on installe les dépendances et on execute toutes les commandes en commençant par heure de début de la pipeline et en finissant par un message qui indique qu'il n'y a pas d'erreur. 
 ```
 
 - En particulier : à quoi sert le “on” ? dans votre fichier YML ? Quelle est la différence entre “on push” et “on pull request”. Que conseilleriez-vous comme option parmi ces 2 options à un groupe de développeurs junior ? Pourquoi ?
 
 ```bash
-<votre réponse ici>
+Dans notre fichier yml le on veut dire que notre workflow c'est lancer 
+
+On push enclenche le workflow lorsequ'on push quelque chose dans notre code et on pull request veut dire qu'il s'active quand l'on fait un pull dans notre code 
+
+Pour nous on pull request est le mieux car on peut voir nos erreur avant de merge
 ```
 
 - Quelle est la différence entre run et run_on ? Expliquez par rapport à votre pipeline.
 
 ```bash
-<votre réponse ici>
+Run execute simplement la commande alors que run_on signifie que l'on va l'exécuter sur un environnement bien précis 
 ```
 
 - Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline.
 
 ```bash
-<votre réponse ici>
+Use est utilisé lorsqu'on réutilise du code alors que run est une nouvelle commande que l'on va écrire
 ```
 
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline.
 
 ```bash
-<votre réponse ici>
+Oui on peut le faire mais cela ne respectera pas l'énoncé donné car il est nécessaire d'avoir l'heure de debut de la pipeline après l'installation des dépendances et avoir l'heure de fin de la pipeline en fin de code
 ```
 
 - Je veux ajouter un test de sécurité sur mon pipeline en exécutant le programme secure_app. Que devrais-je faire ? Quelles questions devriez-vous vous poser ?
 
 ```bash
-<votre réponse ici>
+On ajoute un nouveau run dans notre code
+Les questions qu'il faut se poser sont:
+Comment secure_app fonctionne ?
+Où dois-je le placer dans mon code ?À t'elle besoin d'un environnement différents que celui que j'utilise ? 
 ```
