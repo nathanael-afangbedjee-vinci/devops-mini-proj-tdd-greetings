@@ -49,3 +49,9 @@ test("return: Bonjour, Kratos et Thanathos. given: Kratos Thanathos in fr ", () 
     "Bonjour, Kratos et Thanathos.",
   );
 });
+
+test("return: Bonjour, Kratos et Thanathos. given: Kratos Thanathos in fr ", () => {
+  expect("Bonjour, Kratos et Thanathos.").toBe(
+    "Bonjour, Kratos et Thanathos.",
+  );
+});
